@@ -1,7 +1,7 @@
 import { EditOutlined, ExportOutlined } from '@ant-design/icons'
 import { NavbarRight } from '@renderer/components/app/Navbar'
 import { HStack } from '@renderer/components/Layout'
-import { isWindows } from '@renderer/config/constant'
+import { isLinux, isWindows } from '@renderer/config/constant'
 import { Button } from 'antd'
 import { Search } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
@@ -16,7 +16,7 @@ export const McpSettingsNavbar = () => {
   const onClick = () => window.open('https://mcp.so/', '_blank')
 
   return (
-    <NavbarRight style={{ paddingRight: isWindows ? 150 : 12 }}>
+    <NavbarRight style={{ paddingRight: isWindows ? 150 : isLinux ? 110 : 12 }}>
       <HStack alignItems="center" gap={5}>
         <Button
           size="small"

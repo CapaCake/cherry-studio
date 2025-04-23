@@ -58,7 +58,7 @@ export class WindowService {
       transparent: isMac,
       vibrancy: 'sidebar',
       visualEffectState: 'active',
-      titleBarStyle: isLinux ? 'default' : 'hidden',
+      titleBarStyle: 'hidden',
       titleBarOverlay: theme === 'dark' ? titleBarOverlayDark : titleBarOverlayLight,
       backgroundColor: isMac ? undefined : theme === 'dark' ? '#181818' : '#FFFFFF',
       trafficLightPosition: { x: 8, y: 12 },

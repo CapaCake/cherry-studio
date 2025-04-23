@@ -1,6 +1,7 @@
 import { app } from 'electron'
 
 import { getDataPath } from './utils'
+import { isLinux } from './constant'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -12,7 +13,7 @@ export const DATA_PATH = getDataPath()
 
 export const titleBarOverlayDark = {
   height: 40,
-  color: 'rgba(0,0,0,0)',
+  color: isLinux ? 'rgb(31, 31, 31)' : 'rgba(0,0,0,0)',
   symbolColor: '#ffffff'
 }
 
