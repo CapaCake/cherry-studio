@@ -1,6 +1,6 @@
 import { NavbarRight } from '@renderer/components/app/Navbar'
 import { HStack } from '@renderer/components/Layout'
-import { isWindows } from '@renderer/config/constant'
+import { isLinux, isWindows } from '@renderer/config/constant'
 import { Button, Dropdown, Menu, type MenuProps } from 'antd'
 import { ChevronDown, Search } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
